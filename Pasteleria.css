@@ -118,7 +118,7 @@ nav ul li a:active {
 
 .card {
     display: flex;
-    height: 500px;
+    height: 400px;
     width: 300px;
     background-color: rgba(245, 178, 245, 0.548);
     margin: 0 30px 50px 30px;
