@@ -1,219 +1,649 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Fredoka One', cursive;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    width: 100%;
+header{
     display: flex;
-    position: sticky;
+    align-items: center;
     justify-content: space-between;
     background-color: #fa5e9a;
     padding: 0 50px;
-    align-items: center;
-    height: 60px;
-    z-index: 100;
+}
+.navList{
     list-style-type: none;
 }
-
-nav h1 {
-    font-size: 2em;
-    color: white;
-    float: right;
-    margin: 10px 2px 10px;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav ul li {
-    cursor: pointer;
-    list-style-type: none;
-}
-
-nav ul li a {
-    display: block;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
+.navList li a{
     color: rgb(255, 255, 255);
-    font-size: 1.2em;
-    padding: 14px;
-    height: 60px;
-}
-
-nav ul li a:hover,
-nav ul li a:active {
-    padding-top: 14px;
-    padding-bottom: 0px;
-    border-bottom: 5px solid rgb(255, 175, 215);
-    transition-duration: 100ms;
-}
-
-.contenedor1 {
-    display: flex;
-    background-image: url(./Img/wallpaperbetter.com_1920x1080\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    align-items: center;
-}
-
-.divi {
-    width: 80vh;
-    margin: 5px;
-    position: absolute;
-    display: flex;
-    margin: 0 30px 50px 30px;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text {
-    color: white;
-    text-align: center;
-    font-family: 'Fredoka One', cursive;
-    font-size: 50px;
-}
-
-.text-border {
-    -webkit-text-stroke: 2px #fa5e9a;
-}
-
-.text-border:hover {
-    cursor: pointer;
-    transform: scale(1.05, 1.05);
-    transition: all 0.25s;
-}
-
-.titulo {
-    font-family: 'Fredoka One', cursive;
-    font-size: 40px;
-    text-align: center;
-    gap: 10px;
-    width: 80%;
-    margin: 20px;
-}
-
-.contenedor2 {
-    display: flex;
-    min-height: 500px;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.card {
-    display: flex;
-    height: 400px;
-    width: 300px;
-    background-color: rgba(245, 178, 245, 0.548);
-    margin: 0 30px 50px 30px;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    border: 1px #ff88ef solid;
-}
-
-.card_div {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.card:hover {
-    cursor: pointer;
-    transform: scale(1.05, 1.05);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
-    transition: all 0.25s;
-    background-color: rgba(255, 79, 255, 0.548);
-}
-
-.text-span {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin: 0 10px 0px 10px;
-}
-
-section a {
     text-decoration: none;
-    color: black;
+    font-size: 1.2em;
 }
 
-.contenedor3 {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20em 0px 20em 0px;
+ /* Estilos para pantallas de escritorio */
+@media screen and (min-width: 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Fredoka One', cursive;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btnAbrirNav{
+        display: none;
+    }
+
+    .btnCerrarNav{
+        display: none;
+    }
+
+    a h1 {
+        font-size: 2em;
+        color: white;
+        float: right;
+        margin: 10px 2px 10px;
+    }
+    
+    .navList{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        cursor: pointer;
+        list-style-type: none;
+    }
+
+    .navList li a{
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+        height: 60px;
+        padding: 14px;
+        text-align: center;        
+    }
+    
+    .navList li a:hover,
+    .navList li a:active {
+        padding-top: 14px;
+        padding-bottom: 0px;
+        border-bottom: 5px solid rgb(255, 175, 215);
+        transition-duration: 100ms;
+    }
+    
+    .contenedor1 {
+        display: flex;
+        background-image: url(./Img/wallpaperbetter.com_1920x1080\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    .divi {
+        margin: 5px;
+        position: absolute;
+        display: flex;
+        margin: 0 30px 50px 30px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text {
+        color: white;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        font-size: 50px;
+    }
+    
+    .text-border {
+        -webkit-text-stroke: 2px #fa5e9a;
+    }
+    
+    .text-border:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+        transition: all 0.25s;
+    }
+    
+    .titulo {
+        font-family: 'Fredoka One', cursive;
+        font-size: 40px;
+        text-align: center;
+        gap: 10px;
+        width: 80%;
+        margin: 20px;
+    }
+    
+    .contenedor2 {
+        display: flex;
+        min-height: 500px;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        display: flex;
+        height: 400px;
+        width: 300px;
+        background-color: rgba(245, 178, 245, 0.548);
+        margin: 0 30px 50px 30px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        border: 1px #ff88ef solid;
+    }
+    
+    .card_div {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+        transition: all 0.25s;
+        background-color: rgba(255, 79, 255, 0.548);
+    }
+    
+    .text-span {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 10px 0px 10px;
+    }
+    
+    section a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    /*Inicio Pedido*/
+    .contenedor3 {
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20em 0px 20em 0px;
+    }
+    
+    .conform {
+        display: flex;
+        height: 35em;
+        width: 60vw;
+        border: 2px #fa5e9a solid;
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        text-align: justify;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .text-form {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .button {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        background-color: #fa5e9a;
+        height: 25px;
+        width: 150px;
+        border: 0px;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        transform: scale(1, 1);
+        box-shadow: 0 5px 16px rgba(72, 0, 75, 0.507);
+        transition: all 0.2s;
+    }
+    /*Fin Pedido*/
+    
+    .footer {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        height: 15vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .divfoo {
+        display: flex;
+        width: 30.3%;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
 
-.conform {
-    display: flex;
-    height: 35em;
-    width: 100vh;
-    border: 2px #fa5e9a solid;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
-    justify-content: center;
-    padding: 10px;
-    align-items: center;
-    text-align: justify;
-    flex-wrap: wrap;
-    flex-direction: row;
+
+/* Estilos para tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Fredoka One', cursive;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btnAbrirNav{
+        display: none;
+    }
+
+    .btnCerrarNav{
+        display: none;
+    }
+
+    a h1 {
+        font-size: 2em;
+        color: white;
+        float: right;
+        margin: 10px 2px 10px;
+    }
+
+    .navList{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        cursor: pointer;
+        list-style-type: none;
+    }
+
+    .navList li a{
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+        height: 60px;
+        padding: 14px;
+        text-align: center;        
+    }
+    
+    .navList li a:hover,
+    .navList li a:active {
+        padding-top: 14px;
+        padding-bottom: 0px;
+        border-bottom: 5px solid rgb(255, 175, 215);
+        transition-duration: 100ms;
+    }
+
+    .contenedor1 {
+        display: flex;
+        background-image: url(./Img/wallpaperbetter.com_1920x1080\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .divi {
+        margin: 5px;
+        position: absolute;
+        display: flex;
+        margin: 0 30px 50px 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divi img{
+        height: 49vw;
+        width: 49vw;
+    }
+    
+    .text-border:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+        transition: all 0.25s;
+    }
+
+    .contenedor2 {
+        display: flex;
+        min-height: 500px;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .titulo {
+        font-family: 'Fredoka One', cursive;
+        font-size: 40px;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .card {
+        display: flex;
+        height: 400px;
+        width: 300px;
+        background-color: rgba(245, 178, 245, 0.548);
+        margin: 0 30px 50px 30px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        border: 1px #ff88ef solid;
+    }
+    .card_div {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+        transition: all 0.25s;
+        background-color: rgba(255, 79, 255, 0.548);
+    }
+
+    .text-span {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 10px 0px 10px;
+    }
+    
+    section a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Inicio Pedidos*/
+    .contenedor3 {
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20em 0px 20em 0px;
+    }
+
+    .conform {
+        display: flex;
+        height: 35em;
+        width: 60vw;
+        border: 2px #fa5e9a solid;
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        text-align: justify;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .text-form {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .button {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        background-color: #fa5e9a;
+        height: 25px;
+        width: 150px;
+        border: 0px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        transform: scale(1, 1);
+        box-shadow: 0 5px 16px rgba(72, 0, 75, 0.507);
+        transition: all 0.2s;
+    }
+    /*Fin Pedidos*/
+
+    .footer {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .divfoo {
+        display: flex;
+        width: 30.3%;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
 
-.text-form {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
 
-.button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    background-color: #fa5e9a;
-    height: 25px;
-    width: 150px;
-    border: 0px;
-    cursor: pointer;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Fredoka One', cursive;
+        margin: 0;
+        padding: 0;
+    }
 
-.button:hover {
-    transform: scale(1, 1);
-    box-shadow: 0 5px 16px rgba(72, 0, 75, 0.507);
-    transition: all 0.2s;
-}
+    .btnAbrirNav,
+    .btnCerrarNav{
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    } 
+    
+    .btnCerrarNav{
+        font-size: 1.8rem;
+    }
 
-.footer {
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    height: 15vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    gap: 15px;
-    justify-content: center;
-}
 
-.divfoo {
-    display: flex;
-    height: 12.5vh;
-    width: 30.3%;
-    gap: 5px;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    a h1 {
+        font-size: 2em;
+        color: white;
+        float: right;
+        margin: 10px 2px 10px;
+    }
+    
+
+    header{
+        padding: 0 8px 0 50px;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fa5e9a;
+        padding: 15px 8px 0 50px;
+        bottom: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.74);
+        z-index: 100;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navList{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 25px;
+    }
+
+    .contenedor1 {
+        display: flex;
+        background-image: url(./Img/wallpaperbetter.com_1920x1080\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text-border:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+        transition: all 0.25s;
+    }
+
+    .contenedor2 {
+        display: flex;
+        min-height: 500px;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .titulo {
+        font-family: 'Fredoka One', cursive;
+        font-size: 40px;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .card {
+        display: flex;
+        height: 400px;
+        width: 300px;
+        background-color: rgba(245, 178, 245, 0.548);
+        margin: 0 30px 50px 30px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        border: 1px #ff88ef solid;
+    }
+    .card_div {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+        transition: all 0.25s;
+        background-color: rgba(255, 79, 255, 0.548);
+    }
+
+    .text-span {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 10px 0px 10px;
+    }
+    
+    section a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Inicio Pedidos*/
+    .contenedor3 {
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20em 0px 20em 0px;
+    }
+
+    .conform {
+        display: flex;
+        height: 35em;
+        width: 80vw;
+        border: 2px #fa5e9a solid;
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        text-align: justify;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .text-form {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .button {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        background-color: #fa5e9a;
+        height: 25px;
+        width: 150px;
+        border: 0px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        transform: scale(1, 1);
+        box-shadow: 0 5px 16px rgba(72, 0, 75, 0.507);
+        transition: all 0.2s;
+    }
+    /*Fin Pedidos*/
+
+    .footer {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .divfoo {
+        display: flex;
+        width: 30.3%;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
