@@ -563,7 +563,7 @@ header{
     .card {
         display: flex;
         height: 400px;
-        width: 50vw;
+        width: 90vw;
         background-color: rgba(245, 178, 245, 0.548);
         margin: 0 0px 0px 0px;
         gap: 10px;
